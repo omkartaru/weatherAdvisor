@@ -1,38 +1,166 @@
-.App {
+body{
   text-align: center;
+  background-color: #84BE82;
+  
+}
+.navbar-brand img{
+  width: 120px;
+  height: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+  color: #4078AF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeback{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+
+}
+
+
+.card{
+ 
+  width: 310px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px rgba(46, 46, 46, 0.767);
+}
+
+.content{
+
+  margin: 1.5rem 0;
+
+}
+
+.search-box{
+  width: 250px;
+  height: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 25px;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.493);
+
+}
+.search-box input{
+  border: none;
+  background: transparent;
+  margin: 5px 10px;
+  width: 150px;
+}
+.search-box input:focus{
+  outline: none;
+}
+.searchlogo{
+  background: transparent;
+  color: #84BE82;
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+.logo img{
+  width: 200px;
+
+}
+.resultlogo{
+  text-align: center;
+  color: rgb(73, 73, 73);
+  animation: mymove 1s linear infinite ;
+
+ 
+}
+@keyframes mymove {
+  0% { opacity: 0; 
+   }
+ 
+  100% { opacity: 1;
+     }
+}
+
+
+.cityresult{
+  color: #84BE82;
+  text-transform: capitalize;
+}
+#traveladvice{
+  color: #84BE82;
+  text-transform: capitalize;
+}
+/* how page*/
+.howback{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+ 
+}
+.iframeweathersite{
+  width: 350px;
+  height: 400px;
+  overflow-x: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 6px 10px rgb(73, 73, 73);
+}
+.contenthow{
+  padding: 100px 100px;
+  text-align: justify;
+
+}
+.workheading{
   color: white;
+  margin: 25px 0;
+  text-shadow: 3px 4px 6px rgb(78, 78, 78);
+}
+/* footer */
+.footer{
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  align-items: center;
+  width: 100%;
+
+
+  position: fixed;
+  bottom: 0;
+}
+.footer .footerlogo{
+  font-size: 40px;
+  color: #424242;
+  cursor: pointer;
+}
+.footer .footerlogo:hover{
+  color: rgb(6, 108, 116);
+
+}
+/*my creater*/
+#myphoto{
+  width: 300px;
+  height: 250px;
+  overflow: hidden ;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+
+}
+#myphoto img{
+  border-radius: 30px 20px 0 0;
+  
+}
+.contentCreater{
+  margin: 40px 0;
+  color: white;
+  font-size: 20px;
+  line-height: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
